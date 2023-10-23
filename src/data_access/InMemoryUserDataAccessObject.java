@@ -1,6 +1,7 @@
 package data_access;
 
 import entity.User;
+import use_case.clear_users.ClearUserDataAccessInterface;
 import use_case.signup.SignupUserDataAccessInterface;
 
 import java.util.HashMap;
@@ -27,3 +28,5 @@ public class InMemoryUserDataAccessObject implements SignupUserDataAccessInterfa
         users.put(user.getName(), user);
     }
 }
+
+
